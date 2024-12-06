@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tedu.jsd2307enjoymall.dao.persist.mapper.ProductMapper">
+
+    <insert id="insert">
+        INSERT INTO enjoymall.t_product(name , createTime , type , price  , imgUrl , createBy)
+        VALUES (#{name}, #{createTime}, #{type}, #{price},null,#{createBy})
+    </insert>
+
+    <delete id="deleteProduct">
+        DELETE
+        FROM enjoymall.t_product
+        WHERE id=#{id}
+    </delete>
+
+</mapper>

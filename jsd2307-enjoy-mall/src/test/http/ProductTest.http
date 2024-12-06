@@ -1,0 +1,18 @@
+GET http://localhost:8080/v1/product/delete-product/3
+
+Accept: application/json
+
+###
+POST http://localhost:8080/v1/product/add-new
+Content-Type: application/json
+
+{
+  "name": "第10个商品",
+  "type": "安分守己",
+  "price": 10988.88,
+  "createBy": "02"
+}
+
+
+
+###

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.tedu.jsd2307enjoymall.dao.persist.mapper.UserMapper">
+
+    <insert id="insert">
+        INSERT INTO enjoymall.t_user(username,password,nickname,create_time,phone,email,is_admin)
+        VALUES (#{username},#{password},#{nickname},#{createTime},#{phone},#{email},1)
+    </insert>
+
+    <select id="selectByUsername"
+            resultType="cn.tedu.jsd2307enjoymall.pojo.vo.UserVO">
+        SELECT id, username, nickname,password
+        FROM enjoymall.t_user
+        WHERE username = #{username}
+    </select>
+
+
+</mapper>

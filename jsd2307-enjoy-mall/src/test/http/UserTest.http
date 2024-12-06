@@ -1,0 +1,21 @@
+POST http://localhost:8080/v1/users/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123456"
+}
+
+###
+POST http://localhost:8080/v1/users/reg
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123456",
+  "nickname": "管理员",
+  "phone": 17776543211,
+  "email": "admin@guanliyuan.com"
+}
+
+###
